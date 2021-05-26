@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #171717;
+}
+
+section {
+  max-width: 576px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+header h3 {
+  color: #fff;
+  margin: 15px 0 3px 0;
+}
+
+header p {
+  color: crimson;
+}
+
+label {
+  color: #fff;
+  border-bottom: 4px solid crimson;
+  margin-left: 2rem;
+  width: fit-content;
+  padding: 0 0.5rem;
+  margin-top: 3rem;
+  display: block;
+}
+
+ul {
+  background-color: #131313;
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a8a8a8;
+  margin-bottom: 15px;
+  padding-bottom: 0.5rem;
+}
+
+.track-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.track-number {
+  color: #a8a8a8;
+  margin-right: 10px;
+}
+
+.track-detail_name {
+  color: #fff;
+}
+
+.track-detail_desc {
+  color: #a8a8a8;
+}
+
+footer {
+  background-color: #030303;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.slider {
+  background-color: darken(white, 50%);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+
+.slider-progress {
+  background-color: crimson;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 0%;
+}
+.slider-pin {
+  background-color: white;
+  border-radius: 8px;
+  height: 8px;
+  position: absolute;
+  pointer-events: all;
+  right: -5px;
+  top: -2px;
+  width: 8px;
+  box-shadow: (0px 1px 1px 0px rgba(0, 0, 0, 0.32));
+  transition: (transform 0.25s ease);
+}
+
+.count {
+  color: #585858;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin: 3px 0 1rem 0;
+  font-weight: bold;
+}
+
+.event {
+  color: #585858;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}

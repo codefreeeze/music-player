@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <section>
+      <!-- CURRENT PLAYING HEADER -->
+      <header>
+        <img
+          src="https://cdn.britannica.com/03/151903-131-E310E9EC/Microphone-background-sound-waves-energy-Music.jpg"
+          alt="playing-cover"
+        />
+        <h3>Track Name</h3>
+        <p>Track desc</p>
+      </header>
+
+      <!-- PLAYLIST LABEL-->
+      <label>Playlist</label>
+
+      <!-- TRACK LIST -->
+      <ul></ul>
+
+      <!-- MUSIC CONTROLS -->
+      <footer>
+        <!-- SLIDER -->
+        <div class="slider">
+          <div class="slider-progress">
+            <div class="slider-pin"></div>
+          </div>
+        </div>
+
+        <!-- COUNT -->
+        <div class="count">
+          <span class="count-current">00:01</span>
+          <span class="count-final">11:23</span>
+        </div>
+
+        <!-- EVENTS -->
+        <div class="event">
+          <i class="fas fa-caret-left event-prev"></i>
+          <i class="fas fa-play event-playPause"></i>
+          <i class="fas fa-caret-right event-next"></i>
+          <i class="fas fa-volume-up event-muteUnmute"></i>
+        </div>
+      </footer>
+    </section>
+    <audio src="" id="audio"></audio>
+    <!-- JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
